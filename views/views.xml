@@ -16,8 +16,8 @@
 
 
     <record model="ir.ui.view" id="enquiry_form_view_leads">
-        <field name="name">Enquiry - Leads Form</field>
-        <field name="model">enquiry.lead</field>
+        <field name="name">Tutorial - Create Form</field>
+        <field name="model">tutorials.tutorials</field>
         <field name="arch" type="xml">
             <form string="Enquiry Leads Form">
                 <sheet>
