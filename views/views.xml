@@ -1,20 +1,48 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="tutorials.list">
       <field name="name">tutorials list</field>
       <field name="model">tutorials.tutorials</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <!-- <field name="name"/> -->
+          <field name="title"/>
+          <field name="author"/>
         </tree>
       </field>
     </record>
--->
 
+
+    <record model="ir.ui.view" id="enquiry_form_view_leads">
+        <field name="name">Enquiry - Leads Form</field>
+        <field name="model">enquiry.lead</field>
+        <field name="arch" type="xml">
+            <form string="Enquiry Leads Form">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="title" placeholder="" />
+                        </h1>
+                    </div> 
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="content" placeholder="" />
+                        </h1>
+                    </div> 
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" />
+                        <h1>
+                            <field name="author" placeholder="" />
+                        </h1>
+                    </div> 
+                </sheet>
+            </form>
+        </field>
+    </record>  <!-- is working well -->
     <!-- actions opening views on models -->
 <!--
     <record model="ir.actions.act_window" id="tutorials.action_window">

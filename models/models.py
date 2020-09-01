@@ -8,6 +8,8 @@ class tutorials(models.Model):
      _description = 'tutorials.tutorials'
 
      title = fields.Char()
+     content = fields.Html()
+     author = fields.Many2one("res.partner", string="author")
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
