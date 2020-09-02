@@ -15,7 +15,7 @@
     </record>
 
 
-    <record model="ir.ui.view" id="enquiry_form_view_leads">
+    <record model="ir.ui.view" id="tutorials_form_view">
         <field name="name">Tutorial - Create Form</field>
         <field name="model">tutorials.tutorials</field>
         <field name="arch" type="xml">
@@ -69,14 +69,14 @@
 -->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="tutorials" id="tutorials.menu_root"/>
--->
+
+    <menuitem name="Tutorials" id="tutorials.menu_root"/>
+
     <!-- menu categories -->
-<!--
+
     <menuitem name="Menu 1" id="tutorials.menu_1" parent="tutorials.menu_root"/>
     <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/>
--->
+
     <!-- actions -->
 <!--
     <menuitem name="List" id="tutorials.menu_1_list" parent="tutorials.menu_1"
