@@ -74,12 +74,12 @@
     <!-- Top menu item -->
     <!-- <menuitem id="tutorials.menu" parent="menu_root" name="Tuturials" sequence="10"
           action="tutorials.list"/> -->
-    <menuitem name="Tutorials" id="tutorials.menu_root" parent="menu_root"/>
+    <menuitem name="Tutorials" id="tutorials.menu_root" />
 
     <!-- menu categories -->
 
     <menuitem name="Menu 1" id="tutorials.menu_1" parent="tutorials.menu_root"/>
-    <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/> -->
 
     <!-- actions -->
 
