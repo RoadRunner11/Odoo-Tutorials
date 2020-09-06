@@ -15,7 +15,7 @@
       </field>
     </record>
 
-
+<!-- 
     <record model="ir.ui.view" id="tutorials_form_view">
         <field name="name">Tutorial - Create Form</field>
         <field name="model">tutorials.tutorials</field>
@@ -44,7 +44,7 @@
             </form>
         </field>
     </record>  
-    
+     -->
     <!-- is working well -->
     <!-- actions opening views on models -->
 
