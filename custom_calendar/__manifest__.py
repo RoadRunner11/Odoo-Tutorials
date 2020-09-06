@@ -1,19 +1,13 @@
-
 # -*- coding: utf-8 -*-
 {
-    'name': "tutorials",
+    'name': "custom_calendar",
 
     'summary': """
-       An application to keep records of all tutorials
-    		""",
+        Short (1 phrase/line) summary of the module's purpose, used as
+        subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        The Tutorials application will help us keep proper
-        records of our works. This means we can store our
-        tasks and the tutorials attached to these tasks in this 
-        Tutorials application. By doing this, we can make sure 
-        that we are losing out any important 
-        information relating to works, both internal and external works.
+        Long description of module's purpose
     """,
 
     'author': "AKOREDE FODILU OLAWALE",
@@ -22,7 +16,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Tutorials',
+    'category': 'Uncategorized',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
