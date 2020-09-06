@@ -41,9 +41,9 @@
 -->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="custom_calendar" id="custom_calendar.menu_root"/>
--->
+
+    <menuitem name="Personal Calendar" id="custom_calendar.menu_root"/>
+
     <!-- menu categories -->
 <!--
     <menuitem name="Menu 1" id="custom_calendar.menu_1" parent="custom_calendar.menu_root"/>
