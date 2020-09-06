@@ -2,8 +2,8 @@
   <data>
     <!-- explicit list view definition -->
 
-    <!-- <record model="ir.ui.view" id="tutorials.list"> -->
-    <record model="ir.actions.act_window" id="tutorials.list">
+    <record model="ir.ui.view" id="tutorials.list">
+    <!-- <record model="ir.actions.act_window" id="tutorials.list"> -->
       <field name="name">tutorials list</field>
       <field name="model">tutorials.tutorials</field>
       <field name="view_mode">tree,form</field>
