@@ -1,28 +1,29 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="custom_calendar.list">
       <field name="name">custom_calendar list</field>
       <field name="model">custom_calendar.custom_calendar</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="start"/>
+          <field name="end"/>
+          <field name="duration"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="custom_calendar.action_window">
       <field name="name">custom_calendar window</field>
       <field name="res_model">custom_calendar.custom_calendar</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
 <!--
@@ -45,16 +46,16 @@
     <menuitem name="Personal Calendar" id="custom_calendar.menu_root"/>
 
     <!-- menu categories -->
-<!--
+
     <menuitem name="Menu 1" id="custom_calendar.menu_1" parent="custom_calendar.menu_root"/>
     <menuitem name="Menu 2" id="custom_calendar.menu_2" parent="custom_calendar.menu_root"/>
--->
+
     <!-- actions -->
-<!--
+
     <menuitem name="List" id="custom_calendar.menu_1_list" parent="custom_calendar.menu_1"
               action="custom_calendar.action_window"/>
     <menuitem name="Server to list" id="custom_calendar" parent="custom_calendar.menu_2"
               action="custom_calendar.action_server"/>
--->
+
   </data>
 </odoo>
