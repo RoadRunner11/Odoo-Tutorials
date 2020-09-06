@@ -2,20 +2,22 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="tutorials.list">
+    <!-- <record model="ir.ui.view" id="tutorials.list"> -->
+    <record model="ir.actions.act_window" id="tutorials.list">
       <field name="name">tutorials list</field>
       <field name="model">tutorials.tutorials</field>
-      <field name="arch" type="xml">
+      <field name="view_mode">tree,form</field>
+      <!-- <field name="arch" type="xml">
         <tree>
-          <!-- <field name="name"/> -->
+           <field name="name"/>
           <field name="title"/>
           <field name="author"/>
         </tree>
-      </field>
+      </field> -->
     </record>
 
 
-    <record model="ir.ui.view" id="tutorials_form_view">
+    <!-- <record model="ir.ui.view" id="tutorials_form_view">
         <field name="name">Tutorial - Create Form</field>
         <field name="model">tutorials.tutorials</field>
         <field name="arch" type="xml">
@@ -42,7 +44,9 @@
                 </sheet>
             </form>
         </field>
-    </record>  <!-- is working well -->
+    </record>   -->
+    
+    <!-- is working well -->
     <!-- actions opening views on models -->
 <!--
     <record model="ir.actions.act_window" id="tutorials.action_window">
@@ -69,13 +73,14 @@
 -->
 
     <!-- Top menu item -->
-
-    <menuitem name="Tutorials" id="tutorials.menu_root"/>
+    <menuitem id="tutorials.menu" parent="menu_root" name="Tuturials" sequence="10"
+          action="tutorials.list"/>
+    <!-- <menuitem name="Tutorials" id="tutorials.menu_root"/> -->
 
     <!-- menu categories -->
-
+<!-- 
     <menuitem name="Menu 1" id="tutorials.menu_1" parent="tutorials.menu_root"/>
-    <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/>
+    <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/> -->
 
     <!-- actions -->
 <!--
