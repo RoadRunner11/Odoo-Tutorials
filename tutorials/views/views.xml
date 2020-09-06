@@ -8,7 +8,7 @@
       <field name="model">tutorials.tutorials</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
+          <!-- <field name="name"/> -->
           <field name="title"/>
           <field name="author"/>
         </tree>
@@ -47,16 +47,16 @@
     
     <!-- is working well -->
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="tutorials.action_window">
       <field name="name">tutorials window</field>
       <field name="res_model">tutorials.tutorials</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
+
     <record model="ir.actions.server" id="tutorials.action_server">
       <field name="name">tutorials server</field>
       <field name="model_id" ref="model_tutorials_tutorials"/>
@@ -69,7 +69,7 @@
         }
       </field>
     </record>
--->
+
 
     <!-- Top menu item -->
     <!-- <menuitem id="tutorials.menu" parent="menu_root" name="Tuturials" sequence="10"
@@ -82,11 +82,11 @@
     <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/> -->
 
     <!-- actions -->
-<!--
+
     <menuitem name="List" id="tutorials.menu_1_list" parent="tutorials.menu_1"
               action="tutorials.action_window"/>
     <menuitem name="Server to list" id="tutorials" parent="tutorials.menu_2"
               action="tutorials.action_server"/>
--->
+
   </data>
 </odoo>
