@@ -16,7 +16,7 @@ class custom_calendar(models.Model):
     def _compute_duration(self):
         for record in self:
             d1=datetime.strptime(str(self.start),'%Y-%m-%d') 
-            d2=datetime.strptime(str(self.end),'%Y-%m-%d')
+            d2=datetime.strptime(str(self.final_date),'%Y-%m-%d')
             d3=d2-d1
             record.duration = str(d3.days)
 #     value = fields.Integer()
