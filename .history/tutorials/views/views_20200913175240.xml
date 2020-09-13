@@ -78,7 +78,7 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Tutorials" id="tutorials.menu_1" parent="tutorials.menu_root"/>
+    <menuitem name="tutorials" id="tutorials.menu_1" parent="tutorials.menu_root"/>
     <!-- <menuitem name="Menu 2" id="tutorials.menu_2" parent="tutorials.menu_root"/> -->
 
     <!-- actions -->

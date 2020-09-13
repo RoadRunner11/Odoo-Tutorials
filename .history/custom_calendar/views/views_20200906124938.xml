@@ -47,7 +47,7 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Calendar" id="custom_calendar.menu_1" parent="custom_calendar.menu_root"/>
+    <menuitem name="Menu 1" id="custom_calendar.menu_1" parent="custom_calendar.menu_root"/>
     <menuitem name="Menu 2" id="custom_calendar.menu_2" parent="custom_calendar.menu_root"/>
 
     <!-- actions -->
