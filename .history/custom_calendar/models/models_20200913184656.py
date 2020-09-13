@@ -15,9 +15,9 @@ class custom_calendar(models.Model):
     @api.depends('start', 'end')	
     def _compute_duration(self):
         for record in self:
-            if record.start and record.end:
-                d1=fields.Datetime.from_string(record.start)
-                d2=fields.Datetime.from_string(record.end)
+            if record.d and record.date_end:
+                d1=fields.Datetime.from_string(self.start)
+                d2=fields.Datetime.from_string(self.end)
                 d3=d2-d1
                 record.duration = str(d3.days)
 #     value = fields.Integer()
