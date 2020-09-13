@@ -14,12 +14,12 @@ class custom_calendar(models.Model):
 
     @api.depends('start', 'end')	
     def _compute_duration(self):
-        for record in self:
-            if self.start and self.end:
-                d1=datetime.strptime(self.start, "%m/%d/%Y %H:%M:%S")
-                d2=datetime.strptime(self.end, "%m/%d/%Y %H:%M:%S")
-                d3=d2-d1
-                record.duration = str(d3.days)
+        # for record in self:
+        if self.start and self.end:
+            d1=datetime.strptime(self.start, "%m/%d/%Y %H:%M:%S")
+            d2=datetime.strptime(self.end, "%m/%d/%Y %H:%M:%S")
+            d3=d2-d1
+            self.duration = str(d3.days)
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
