@@ -19,7 +19,7 @@ class custom_calendar(models.Model):
             d1=datetime.strptime(self.start, "%m/%d/%Y %H:%M:%S")
             d2=datetime.strptime(self.end, "%m/%d/%Y %H:%M:%S")
             d3=d2-d1
-            self.duration = str(d3.days)
+            self.duration = abs(d3.days)
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
