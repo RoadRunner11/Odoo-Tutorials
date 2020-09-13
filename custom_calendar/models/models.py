@@ -16,8 +16,8 @@ class custom_calendar(models.Model):
     def _compute_duration(self):
         for record in self:
             if record.start and record.end:
-                d1=fields.Datetime.from_string(record.start)
-                d2=fields.Datetime.from_string(record.end)
+                d1=datetime.strptime(self.start, "%m/%d/%Y %H:%M:%S")
+                d2=datetime.strptime(self.end, "%m/%d/%Y %H:%M:%S")
                 d3=d2-d1
                 record.duration = str(d3.days)
 #     value = fields.Integer()
