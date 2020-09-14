@@ -10,7 +10,7 @@ class custom_calendar(models.Model):
     name = fields.Char(string='Event Name')
     start = fields.Date(string="Start date")
     end = fields.Date(string="End date")
-    duration = fields.Float( compute='_compute_duration', required=True)
+    duration = fields.Float(  string="TOTAL DAYS")
 
     @api.onchange('from_date', 'final_date','total_days')
     def calculate_date(self):
