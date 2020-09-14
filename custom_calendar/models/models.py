@@ -12,7 +12,7 @@ class custom_calendar(models.Model):
     end = fields.Date(string="End date")
     duration = fields.Float(  string="TOTAL DAYS")
 
-    @api.onchange('from_date', 'final_date','total_days')
+    @api.onchange('start', 'end', 'duration')
     def calculate_date(self):
         if self.start and self.end:
             d1=datetime.strptime(str(self.start),'%Y-%m-%d') 
