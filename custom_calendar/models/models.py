@@ -14,8 +14,7 @@ class custom_calendar(models.Model):
 
     @api.depends('start', 'end')	
     def _compute_duration(self):
-        # for record in self:
-        if self.start and self.end:
+        for record in self:
             d1=datetime.strptime(str(self.start), "%m/%d/%Y %H:%M:%S")
             d2=datetime.strptime(str(self.end), "%m/%d/%Y %H:%M:%S")
             d3=d2-d1
