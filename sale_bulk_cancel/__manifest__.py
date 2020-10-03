@@ -7,11 +7,16 @@
         subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        Long description of module's purpose
-    """,
+        The Tutorials application will help us keep proper
+        records of our works. This means we can store our
+        tasks and the tutorials attached to these tasks in this 
+        Tutorials application. By doing this, we can make sure 
+            that we are losing out any important 
+        information relating to works, both internal and external works.
+        """ ,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "AKOREDE FODILU OLAWALE",
+    'website': "http://46.101.249.182:8069",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -20,7 +25,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['sale'],
 
     # always loaded
     'data': [
