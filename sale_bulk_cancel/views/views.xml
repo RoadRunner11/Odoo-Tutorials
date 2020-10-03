@@ -57,7 +57,7 @@
               action="sale_bulk_cancel.action_server"/>
 -->
 
-    <act_window
+    <!-- <act_window
             id="action_sale_bulk_cancel"
             name="Register Payment"
             res_model="sale_bulk_cancel.sale_bulk_cancel" # which object
@@ -66,6 +66,6 @@
             multi="True" 
             target="new"
             key2="client_action_multi"
-    />
+    /> -->
   </data>
 </odoo>
