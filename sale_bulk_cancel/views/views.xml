@@ -2,18 +2,11 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="sale_bulk_cancel">
+    <record model="ir.actions.act_window" id="sale_bulk_cancel">
       <field name="name">Cancel Orders</field>
-      <field name="model">sale.order</field>
-      <field name="arch" type="xml">
-        <form>
-          
-          <footer>
-              <button name="update_state" string="Update" type="object"/>
-              <button string="Cancel" class="btn-secondary" special="cancel"/>
-          </footer>
-        </form>
-      </field>
+      <field name="res_model">sale.order</field>
+      <field name="view_mode">graph</field>
+      <field name="view_id" ref="my_specific_view"/>
     </record>
 
 
