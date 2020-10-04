@@ -5,14 +5,9 @@
     <record model="ir.ui.view" id="sale_bulk_cancel">
       <field name="name">Cancel Orders</field>
       <field name="model">sale.order</field>
-      <field name="inherit_id" ref="sale.view_order_tree" />
       <field name="arch" type="xml">
         <form>
-          <group>
-              <group>
-                  <field name="nane"/>
-              </group>
-          </group>
+          
           <footer>
               <button name="update_state" string="Update" type="object"/>
               <button string="Cancel" class="btn-secondary" special="cancel"/>
@@ -69,7 +64,7 @@
           res_model="sale.order"
           binding_model="sale.order"
           binding_views="list"
-          view_mode="list"
+          view_mode="form"
           target="new"
       />
   </data>
