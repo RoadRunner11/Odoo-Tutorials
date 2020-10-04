@@ -57,15 +57,13 @@
               action="sale_bulk_cancel.action_server"/>
 -->
 
-    <!-- <act_window
-            id="action_sale_bulk_cancel"
-            name="Register Payment"
-            res_model="sale_bulk_cancel.sale_bulk_cancel" # which object
-            src_model="account.invoice" # on which object
-            view_mode="form" 
-            multi="True" 
+   <act_window name="Update State"
+            id="update_state_action"
+            res_model="update.state"
+            binding_model="sale.order"
+            binding_views="form"
+            view_mode="list"
             target="new"
-            key2="client_action_multi"
-    /> -->
+        />
   </data>
 </odoo>
