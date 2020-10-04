@@ -61,7 +61,7 @@
           id="sale_bulk_cancel_action"
           res_model="sale_bulk_cancel.sale_bulk_cancel"
           binding_model="sale.order"
-          binding_views="form"
+          binding_views="list"
           view_mode="list"
           target="new"
       />
