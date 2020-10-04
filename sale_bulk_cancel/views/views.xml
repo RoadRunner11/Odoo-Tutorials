@@ -3,7 +3,7 @@
     <!-- explicit list view definition -->
 
     <record model="ir.ui.view" id="sale_bulk_cancel_action">
-      <field name="name">Cancel Orders</field>
+      <field name="name">Cancel These Orders</field>
       <field name="model">sale.order</field>
       <field name="inherit_id" ref="sale.view_order_form" />
       <field name="priority">10</field>
