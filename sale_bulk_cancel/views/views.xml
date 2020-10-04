@@ -7,9 +7,8 @@
       <field name="model">sale.order</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <div>Are you sure you want to cancel these records</div>
+          
           <footer>
               <button name="update_state" string="Ok" type="object"/>
               <button string="Cancel" class="btn-secondary" special="cancel"/>
