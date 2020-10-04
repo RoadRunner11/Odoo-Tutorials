@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class sale_bulk_cancel(models.Model):
+class sale_bulk_cancel(models.TransientModel):
     _name = 'sale_bulk_cancel.sale_bulk_cancel'
     _description = 'sale_bulk_cancel.sale_bulk_cancel'
     # _inherit = "sale.order"
