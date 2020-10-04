@@ -1,19 +1,23 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="sale_bulk_cancel.list">
-      <field name="name">sale_bulk_cancel list</field>
+      <field name="name">Cancel Orders</field>
       <field name="model">sale_bulk_cancel.sale_bulk_cancel</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
           <field name="value"/>
           <field name="value2"/>
+          <footer>
+              <button name="update_state" string="Ok" type="object"/>
+              <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
 <!--
