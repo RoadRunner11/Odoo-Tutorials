@@ -8,12 +8,12 @@
       <field name="inherit_id" ref="sale.view_order_tree" />
       <field name="arch" type="xml">
         <tree>
-          <!-- <field name="name"/>
+          <p>Are you sure you want to cancel these orders?</p>
           
           <footer>
               <button name="update_state" string="Ok" type="object"/>
               <button string="Cancel" class="btn-secondary" special="cancel"/>
-          </footer> -->
+          </footer>
         </tree>
       </field>
     </record>
