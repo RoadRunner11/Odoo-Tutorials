@@ -22,16 +22,10 @@
     <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
       <field name="name">Cancel Orders</field>
       <field name="res_model">sale.order</field>
-      <field name="view_mode">tree,form</field>
-      <field name="arch" type="xml">
-        <form>
-          
-          <footer>
-              <button name="update_state" string="Update" type="object"/>
-              <button string="Cancel" class="btn-secondary" special="cancel"/>
-          </footer>
-        </form>
-      </field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="view_mode">form</field>
+      <field name="domain">[('state', '!=', 'cancel')]</field>
+      <field name="context">{}</field>
     </record>
 
 
