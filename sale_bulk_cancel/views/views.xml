@@ -1,23 +1,39 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
-    <record model="ir.actions.act_window" id="sale_bulk_cancel">
+<!-- 
+    <record model="ir.actions.view" id="sale_bulk_cancel">
       <field name="name">Cancel Orders</field>
-      <field name="res_model">sale.order</field>
-      <field name="view_mode">graph</field>
-      
-    </record>
+      <field name="model">sale.order</field>
+      <field name="arch" type="xml">
+        <form>
+          
+          <footer>
+              <button name="update_state" string="Update" type="object"/>
+              <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record> -->
 
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
-      <field name="name">sale_bulk_cancel window</field>
-      <field name="res_model">sale_bulk_cancel.sale_bulk_cancel</field>
+      <field name="name">Cancel Orders</field>
+      <field name="res_model">sale.order</field>
       <field name="view_mode">tree,form</field>
+      <field name="arch" type="xml">
+        <form>
+          
+          <footer>
+              <button name="update_state" string="Update" type="object"/>
+              <button string="Cancel" class="btn-secondary" special="cancel"/>
+          </footer>
+        </form>
+      </field>
     </record>
--->
+
 
     <!-- server action to the one above -->
 <!--
