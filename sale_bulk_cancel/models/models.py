@@ -4,9 +4,7 @@ from odoo import models, fields, api
 
 
 class sale_bulk_cancel(models.Model):
-    _name = 'sale_bulk_cancel.sale_bulk_cancel'
-    _description = 'sale_bulk_cancel.sale_bulk_cancel'
-    # _inherit = "sale.order"
+    _inherit = "sale.order"
 
 #     name = fields.Char()
 #     value = fields.Integer()
