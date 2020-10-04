@@ -4,7 +4,7 @@
 
     <record model="ir.ui.view" id="sale_bulk_cancel.list">
       <field name="name">Cancel Orders</field>
-      <field name="model">sale_bulk_cancel.sale_bulk_cancel</field>
+      <field name="model">sale.order</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -63,7 +63,7 @@
 
   <act_window name="Cancel Orders"
           id="sale_bulk_cancel_action"
-          res_model="sale_bulk_cancel.sale_bulk_cancel"
+          res_model="sale.order"
           binding_model="sale.order"
           binding_views="list"
           view_mode="list"
