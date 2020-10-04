@@ -1,10 +1,12 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!-- 
+
     <record model="ir.actions.view" id="sale_bulk_cancel">
       <field name="name">Cancel Orders</field>
       <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form" />
+      <field name="priority">10</field>
       <field name="arch" type="xml">
         <form>
           
@@ -14,19 +16,19 @@
           </footer>
         </form>
       </field>
-    </record> -->
+    </record>
 
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
+    <!-- <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
       <field name="name">Cancel Orders</field>
       <field name="res_model">sale.order</field>
       <field name="type">ir.actions.act_window</field>
       <field name="view_mode">form</field>
       <field name="domain">[('state', '!=', 'cancel')]</field>
       <field name="context">{}</field>
-    </record>
+    </record> -->
 
 
     <!-- server action to the one above -->
