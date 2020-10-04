@@ -6,7 +6,7 @@ from odoo import models, fields, api
 class sale_bulk_cancel(models.TransientModel):
     _name = 'sale_bulk_cancel.sale_bulk_cancel'
     _description = 'sale_bulk_cancel.sale_bulk_cancel'
-    _inherit = "sale.order"
+    # _inherit = "sale.order"
 
 #     name = fields.Char()
 #     value = fields.Integer()
@@ -17,6 +17,6 @@ class sale_bulk_cancel(models.TransientModel):
 #     def _value_pc(self):
 #         for record in self:
 #             record.value2 = float(record.value) / 100
-    def action_cancel(self):
-        pass
+    # def action_cancel(self):
+    #     pass
 
