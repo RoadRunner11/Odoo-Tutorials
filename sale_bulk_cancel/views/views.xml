@@ -57,9 +57,9 @@
               action="sale_bulk_cancel.action_server"/>
 -->
 
-   <act_window name="Update State"
-            id="update_state_action"
-            res_model="update.state"
+   <act_window name="Cancel Orders"
+            id="sale_bulk_cancel_action"
+            res_model="'sale_bulk_cancel.sale_bulk_cancel'"
             binding_model="sale.order"
             binding_views="form"
             view_mode="list"
