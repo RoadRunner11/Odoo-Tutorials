@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.actions.view" id="sale_bulk_cancel">
+    <record model="ir.ui.view" id="sale_bulk_cancel">
       <field name="name">Cancel Orders</field>
       <field name="model">sale.order</field>
       <field name="inherit_id" ref="sale.view_order_form" />
