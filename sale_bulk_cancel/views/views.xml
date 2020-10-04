@@ -64,7 +64,6 @@
           binding_views="form"
           view_mode="list"
           target="new"
-          multi="True"
       />
   </data>
 </odoo>
