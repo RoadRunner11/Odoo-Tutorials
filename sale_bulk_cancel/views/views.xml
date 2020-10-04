@@ -7,14 +7,17 @@
       <field name="model">sale.order</field>
       <field name="inherit_id" ref="sale.view_order_tree" />
       <field name="arch" type="xml">
-        <tree>
-         
-          
+        <form>
+          <group>
+              <group>
+                  <field name="nane"/>
+              </group>
+          </group>
           <footer>
-              <button name="update_state" string="Ok" type="object"/>
+              <button name="update_state" string="Update" type="object"/>
               <button string="Cancel" class="btn-secondary" special="cancel"/>
           </footer>
-        </tree>
+        </form>
       </field>
     </record>
 
