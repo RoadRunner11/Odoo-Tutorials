@@ -8,10 +8,9 @@ class CancelOrders(models.TransientModel):
     _description = 'Cancel checked orders'
 
     def cancel(self):
-        print("ehlo")
-        # active_ids = self._context.get('active_ids', []) or []
-        # for record in self.env['sale.order'].browse(active_ids):
-        #     record.state = "Cancelled"
+        active_ids = self._context.get('active_ids', []) or []
+        for record in self.env['sale.order'].browse(active_ids):
+            record.state = "Cancelled"
 #
 #     @api.depends('value')
 #     def _value_pc(self):

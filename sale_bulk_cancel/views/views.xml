@@ -17,7 +17,15 @@
         </form>
       </field>
     </record>
-
+    <act_window name="Cancel Orders"
+                id="sale_bulk_cancel_action"
+                res_model="cancel.orders"
+                binding_model="sale.order"
+                binding_views="list"
+                view_mode="form"
+                target="new"
+                
+            />
 
     <!-- actions opening views on models -->
 <!--
@@ -61,14 +69,6 @@
               action="sale_bulk_cancel.action_server"/>
 -->
 
-    <act_window name="Cancel Orders"
-            id="sale_bulk_cancel_action"
-            res_model="cancel.orders"
-            binding_model="sale.order"
-            binding_views="list"
-            view_mode="form"
-            target="new"
-            
-        />
+   
   </data>
 </odoo>
