@@ -11,7 +11,7 @@
                 <label class="oe_edit_only" for="name" string="Are you sure you want to cancel these orders?"/>
             </div>
             <footer>
-                <button name="action_cancel" string="Confirm" type="object"/>
+                <button name="cancel" string="Confirm" type="object"/>
                 <button string="Cancel" class="btn-secondary" special="cancel"/>
             </footer>
         </form>
