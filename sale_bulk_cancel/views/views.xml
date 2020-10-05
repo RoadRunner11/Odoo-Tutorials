@@ -8,7 +8,7 @@
       <field name="priority">2</field>
       <field name="arch" type="xml">
         <form>
-          <xpath expr="//group[@name='note_group']" position="before">
+          <xpath expr="//group[@name='note_group']" position="replace">
                 <div class="oe_right">
                     Are you sure you want to cancel?
                 </div>
