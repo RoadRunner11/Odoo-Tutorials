@@ -72,7 +72,7 @@
           res_model="sale.order"
           binding_model="sale.order"
           binding_views="list"
-          view_mode="form"
+          view_mode="list"
           target="new"
       />
   </data>
