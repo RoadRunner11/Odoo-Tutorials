@@ -13,7 +13,7 @@
                 </group>
             </group>
             <footer>
-                <button name="update_state" string="Confirm" type="object"/>
+                <button name="action_cancel" string="Confirm" type="object"/>
                 <button string="Cancel" class="btn-secondary" special="cancel"/>
             </footer>
         </form>
