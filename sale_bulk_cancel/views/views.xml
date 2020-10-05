@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="sale_bulk_cancel_action">
+    <!-- <record model="ir.ui.view" id="sale_bulk_cancel_action">
       <field name="name">Cancel These Orders</field>
       <field name="model">sale.order</field>
       <field name="priority">2</field>
@@ -15,12 +15,12 @@
           </footer>
         </form>
       </field>
-    </record>
+    </record> -->
 
 
     <!-- actions opening views on models -->
 
-    <!-- <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
+    <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
       <field name="name">Cancel Orders</field>
       <field name="res_model">sale.order</field>
       <field name="type">ir.actions.act_window</field>
@@ -34,7 +34,7 @@
           quotation, sales order, delivery, invoicing and payment.
       </p>
       </field>
-    </record> -->
+    </record>
 
 
     <!-- server action to the one above -->
