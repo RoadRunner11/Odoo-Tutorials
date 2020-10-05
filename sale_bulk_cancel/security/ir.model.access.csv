@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cancel_orders,cancel.orders,model_cancel_orders,base.group_user,1,1,1,1
+access_sale_bulk_cancel_CancelOrders,sale_bulk_cancel.cancel.orders,model_cancel_orders,base.group_user,1,1,1,1
