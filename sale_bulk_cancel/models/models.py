@@ -3,7 +3,20 @@
 from odoo import models, fields, api
 
 
-class CancelOrders(models.TransientModel):
+class CancelOrders(models.class (models.Model):
+
+    
+
+    class Meta:
+        verbose_name = _("")
+        verbose_name_plural = _("s")
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("_detail", kwargs={"pk": self.pk})
+):
     _name = 'cancel.orders'
     _description = 'Cancel checked orders'
 
