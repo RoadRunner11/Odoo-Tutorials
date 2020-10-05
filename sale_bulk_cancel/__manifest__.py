@@ -28,7 +28,7 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'wizards/bulk_cancel_view.xml'
+        # 'wizards/bulk_cancel_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
