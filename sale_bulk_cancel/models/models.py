@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class sale_bulk_cancel(models.TransientModel):
-    _name = 'sale_bulk_cancel.sale_bulk_cancel'
+    _name = 'bulk_cancel.bulk_cancel'
     _description = 'This allows a user to cancel all checked orders'
 #     name = fields.Char()
 #     value = fields.Integer()

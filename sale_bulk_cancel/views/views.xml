@@ -59,7 +59,7 @@
 
   <act_window name="Cancel Orders"
           id="sale_bulk_cancel_action"
-          res_model='sale_bulk_cancel.sale_bulk_cancel'
+          res_model='bulk_cancel.bulk_cancel'
           binding_model="sale.order"
           binding_views="list"
           view_mode="form"
