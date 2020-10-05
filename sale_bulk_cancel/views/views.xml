@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="sale_bulk_cancel_action">
+    <!-- <record model="ir.ui.view" id="sale_bulk_cancel_action">
       <field name="name">Cancel Orders</field>
       <field name="model">cancel.orders</field>
       <field name="arch" type="xml">
@@ -25,7 +25,7 @@
                 view_mode="form"
                 target="new"
                 
-            />
+            /> -->
 
     <!-- actions opening views on models -->
 <!--

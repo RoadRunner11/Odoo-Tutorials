@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="sale_bulk_cancel_action">
+      <field name="name">Cancel Orders</field>
+      <field name="model">cancel.orders</field>
+      <field name="arch" type="xml">
+        <form>
+            <div class="oe_left">
+                <label class="oe_edit_only" for="name" string="Are you sure you want to cancel these orders?"/>
+            </div>
+            <footer>
+                <button name="sale_bulk_cancel" string="Confirm" type="object"/>
+                <button string="Cancel" class="btn-secondary" special="cancel"/>
+            </footer>
+        </form>
+      </field>
+    </record>
+    <act_window name="Cancel Orders"
+                id="sale_bulk_cancel_action"
+                res_model="cancel.orders"
+                binding_model="sale.order"
+                binding_views="list"
+                view_mode="form"
+                target="new"
+                
+            />
+
+   
+  </data>
+</odoo>
