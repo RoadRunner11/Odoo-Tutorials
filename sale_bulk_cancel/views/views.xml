@@ -1,14 +1,14 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
+<!-- 
     <record model="ir.ui.view" id="sale_bulk_cancel.list">
       <field name="name">Cancel orders</field>
       <field name="model">cancel.orders</field>
       <field name="arch" type="xml">
         
       </field>
-    </record>
+    </record> -->
 
 
     <!-- actions opening views on models -->
