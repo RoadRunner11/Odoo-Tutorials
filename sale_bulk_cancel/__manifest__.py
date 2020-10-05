@@ -3,20 +3,21 @@
     'name': "sale_bulk_cancel",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Cancel multiple orders""",
 
     'description': """
-        Long description of module's purpose
-    """,
+        The salebulk_cancel application will allow us to cancel all
+        checked order at the click of a button
+        
+            """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "AKOREDE FODILU OLAWALE",
+    'website': "http://46.101.249.182:8069",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Sale',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
