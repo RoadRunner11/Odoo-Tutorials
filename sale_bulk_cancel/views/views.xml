@@ -52,5 +52,14 @@
     <menuitem name="Server to list" id="sale_bulk_cancel" parent="sale_bulk_cancel.menu_2"
               action="sale_bulk_cancel.action_server"/>
 -->
+
+    <act_window name="Update State"
+            id="update_state_action"
+            res_model="cancel.orders"
+            binding_model="sale.order"
+            binding_views="form"
+            view_mode="form"
+            target="new"
+        />
   </data>
 </odoo>
