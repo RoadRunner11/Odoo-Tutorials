@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
+<!-- 
     <record model="ir.ui.view" id="sale_bulk_cancel_action">
       <field name="name">Cancel These Orders</field>
       <field name="model">sale.order</field>
@@ -19,19 +19,27 @@
           </footer>
         </form>
       </field>
-    </record>
+    </record> -->
 
 
     <!-- actions opening views on models -->
 
-    <!-- <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
+    <record model="ir.actions.act_window" id="sale_bulk_cancel.action_window">
       <field name="name">Cancel Orders</field>
       <field name="res_model">sale.order</field>
       <field name="type">ir.actions.act_window</field>
-      <field name="view_mode">form</field>
-      <field name="domain">[('state', '!=', 'cancel')]</field>
-      <field name="context">{}</field>
-    </record> -->
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form,calendar,graph</field>
+      <field name="domain">[('state', 'in', ('sent', 'draft', 'sale'))]</field> 
+      <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+              Click to fill in a new measurement sheet based on the measurement template.
+          </p><p>
+          Odoo will help you efficiently handle the complete sales flow:
+          quotation, sales order, delivery, invoicing and payment.
+      </p>
+      </field>
+    </record>
 
 
     <!-- server action to the one above -->
@@ -72,7 +80,7 @@
           res_model="sale.order"
           binding_model="sale.order"
           binding_views="list"
-          view_mode="list"
+          view_mode="form"
           target="new"
       />
   </data>
