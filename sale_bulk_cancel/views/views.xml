@@ -8,7 +8,7 @@
       <field name="priority">2</field>
       <field name="arch" type="xml">
         <form>
-          
+          <p>Are you sure you want to cancel it?</p>
           <footer>
               <button name="update_state" string="Update" type="object"/>
               <button string="Cancel" class="btn-secondary" special="cancel"/>
