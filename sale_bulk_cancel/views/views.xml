@@ -2,19 +2,7 @@
   <data>
     <!-- explicit list view definition -->
 
-    <!-- <record model="ir.ui.view" id="sale_bulk_cancel_action">
-      <field name="name">Cancel These Orders</field>
-      <field name="model">sale_bulk_cancel.sale_bulk_cancel</field>
-      <field name="arch" type="xml">
-        <form>
-          
-          <footer>
-              <button name="update_state" string="Update" type="object"/>
-              <button string="Cancel" class="btn-secondary" special="cancel"/>
-          </footer>
-        </form>
-      </field>
-    </record> -->
+ 
 
 
     <!-- actions opening views on models -->
