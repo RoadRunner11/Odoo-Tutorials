@@ -7,11 +7,9 @@
       <field name="model">cancel.orders</field>
       <field name="arch" type="xml">
         <form>
-            <!-- <group>
-                <group>
-                    Are you sure, you want to cancel these orders?
-                </group>
-            </group> -->
+            <div class="oe_left">
+                <label class="oe_edit_only" for="name" string="Are you sure?"/>
+            </div>
             <footer>
                 <button name="action_cancel" string="Confirm" type="object"/>
                 <button string="Cancel" class="btn-secondary" special="cancel"/>
