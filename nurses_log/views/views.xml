@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+          <!--  Inherited sale.order view-->
+    <record model="ir.ui.view" id="sale_order_view_inherit">
+      <field name="name">sale.order.view.inherit</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form" />
+      <field name="arch" type="xml">
+        <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='name']" position="after">
+          <field name="completed" />
+          <field name="nurse" readonly="1"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
